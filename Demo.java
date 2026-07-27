@@ -1,7 +1,9 @@
 public class Demo {
     public static void main(String[] args) {
         // Integers --> byte, short, int, long
-        byte b = 5;
+        // binary(2), octal(8), decimal(10), hexadecimal(16)
+        // byte b = 5;
+        byte b = 0b101; // binary representation of 5
         short s = 10;
         int i = 4000;
         long l = 100000;
