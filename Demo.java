@@ -27,11 +27,12 @@ public class Demo {
         // System.out.println("Character: " + c);
         // System.out.println("Boolean: " + bool);
 
-        float f = 8.1434f;
-        float f1 = 0.7f;
-        System.out.printf("%.20f%n",f); // 8.14340019226074218750
-        System.out.printf("%.20f%n", f1); //float f = 8.1434f
+        // float f = 8.1434f;
+        // float f1 = 0.7f;
+        // System.out.printf("%.20f%n",f); // 8.14340019226074218750
+        // System.out.printf("%.20f%n", f1); //float f = 8.1434f
 
-
+        // --------------TYPE CONVERSION ---------------
+        
     }
 }
