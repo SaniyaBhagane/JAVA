@@ -70,6 +70,6 @@ public class Demo {
         // 4. If one operand is double, entire expression will become double
         // byte b = 50;
         // b = (byte) (b * 2);
-        // System.err.println(b); //100
+        // System.out.println(b); //100
     }
 }
