@@ -60,6 +60,16 @@ public class Demo {
 
         // BOOLEAN TO ANY DATATYPE CONVERSIONS ARE NOT POSSIBLE
 
-        
+        // TYPE PROMOTION
+        // byte b = 50;
+        // b = b * 2  //This is converted to int for ease
+        // RULES
+        // 1. byte,short and char are promoted to int
+        // 2. If one operand is long, the whole expression becomes long
+        // 3. If one operand is float, entire expression will become float
+        // 4. If one operand is double, entire expression will become double
+        // byte b = 50;
+        // b = (byte) (b * 2);
+        // System.err.println(b); //100
     }
 }
