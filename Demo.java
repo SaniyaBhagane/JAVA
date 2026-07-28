@@ -73,7 +73,7 @@ public class Demo {
         // System.out.println(b); //100
 
         //-----------OPERATORS in JAVA--------
-        // Arithmatic Operators --> +, -, *, /, %, +=, -=, *=, /=, %=, ++, --
+        // ARITHMETIC OPERATORS --> +, -, *, /, %, +=, -=, *=, /=, %=, ++, --
         // int a = 5;
         // int b = 10;
         // int c = a + b; // 15
@@ -108,7 +108,7 @@ public class Demo {
         // int l = ++j; // l = j + 1;
         // System.out.println(j + " , " + l); // 11, 11
 
-        // Relational Operators. -> ==, !=, <, > , <=, >=
+        // RELATIONAL OPERATORS -> ==, !=, <, > , <=, >=
         // int a = 10;
         // int b = 10;
         // boolean c = (a == b);
@@ -121,6 +121,24 @@ public class Demo {
         // System.out.println(e);
         // System.out.println(f);
 
-        
+        // BITWISE OPERATORS --> &, |, ^, ~, <<, >>, >>>
+    //    int a = 2; // 10 --> 00000000 00000000 00000000 00000010
+    //    int b = 3; // 11 --> 00000000 00000000 00000000 00000011
+    //    int c = a & b; // 10 --> 2
+    //    int d = a | b; // 11 --> 3
+    //    int e = a ^ b; // 01 --> 1
+    //    int f = ~a; // 11111111 11111111 11111111 11111101 --> -3
+    //    System.out.println(c + " , " + d + " , " + e + " , " + f);
+
+    //    // Shift operations
+    //    int g = 1; //   00000000 00000000 00000000 00000001 --> 1
+    //    g = g << 33; // g = g << 33 == g << 1 
+
+    //    // Right shift (>>) (>>>) 
+    //    byte h = 1; // 00000001
+    //    h = (byte)(h << 1); // 00000010 --> 2
+    //    System.out.println(g);
+    //    System.out.println(h);
+
     }
 }
