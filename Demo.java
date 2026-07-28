@@ -57,5 +57,9 @@ public class Demo {
         // int i;
         // i = (int) f;
         // System.out.println(i); //15
+
+        // BOOLEAN TO ANY DATATYPE CONVERSIONS ARE NOT POSSIBLE
+
+        
     }
 }
