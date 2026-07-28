@@ -41,9 +41,18 @@ public class Demo {
         // System.out.println(i); //24
 
         // char to int
-        char c = 'a';
-        int i;
-        i = c;
-        System.out.println(i); //97
+        // char c = 'a';
+        // int i;
+        // i = c;
+        // System.out.println(i); //97
+
+        // EXPLICIT TYPE CONVERSION/ CASTING
+        // int i = 24;
+        // byte b; //-128 to 127
+        // b = (byte) i;
+        // System.out.println(b); // 44 --> 300 % 256 = 44
+
+        // TRUNCATING CONVERSION
+        
     }
 }
