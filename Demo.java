@@ -33,6 +33,17 @@ public class Demo {
         // System.out.printf("%.20f%n", f1); //float f = 8.1434f
 
         // --------------TYPE CONVERSION ---------------
-        
+        // IMPLICIT TYPE CONVERSION/ CASTING
+        // (byte to int)
+        // byte b = 24;
+        // int i;
+        // i = b;
+        // System.out.println(i); //24
+
+        // char to int
+        char c = 'a';
+        int i;
+        i = c;
+        System.out.println(i); //97
     }
 }
