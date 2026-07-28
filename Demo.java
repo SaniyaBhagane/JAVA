@@ -53,6 +53,9 @@ public class Demo {
         // System.out.println(b); // 44 --> 300 % 256 = 44
 
         // TRUNCATING CONVERSION
-        
+        // float f = 15.678f;
+        // int i;
+        // i = (int) f;
+        // System.out.println(i); //15
     }
 }
