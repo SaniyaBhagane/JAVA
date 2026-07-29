@@ -159,16 +159,34 @@ public class Demo {
         // int f = ~a; //  11111111 11111111 11111111 11111101 == -3
         // System.out.println(c + " , " + d + " , " + e + " , " + f);
 
-        byte g = 1;
-        //int h = (g << 8);  // 00000001 --> 1 00000000 --> 0
+        // byte g = 1;
+        // //int h = (g << 8);  // 00000001 --> 1 00000000 --> 0
 
-        int h = 1;
-        h = h << 33;
-        System.out.println(h); // 2
+        // int h = 1;
+        // h = h << 33;
+        // System.out.println(h); // 2
 
-        byte i = 127; // 01000000 --> 00000000
-        byte j = (byte) (i >> 8);
-        // >>>
-        //System.out.println(j); // 1
-    }
+        // byte i = 127; // 01000000 --> 00000000
+        // byte j = (byte) (i >> 8);
+        // // >>>
+        // //System.out.println(j); // 1
+
+        // -------------------LOOPS--------------------------------
+        boolean c = true;
+        int i = 6;
+        // SELECTION STATEMENTS --> if, if-else, if-else-if, switch
+        // Normal if statement
+        // if(i > 5 && i < 10){
+        //     System.out.println("i is greater than 5");
+        // }
+        // else{
+        //      System.out.println("i is less than or equal to 5");
+        // }
+    //     if(i % 2 == 0){
+    //         System.out.println(" i is even no");
+    //     }
+    //     else{
+    //         System.out.println("i is an odd no");
+    //     }
+    // }
 }
