@@ -188,5 +188,28 @@ public class Demo {
     //     else{
     //         System.out.println("i is an odd no");
     //     }
-    // }
+
+    // Nested if 
+    // If can have an else statement or not 
+     if(i > 5){
+        if(i < 10){
+            if(i == 7){
+                System.out.println("i is equal to 7");
+            }
+        }
+        else{
+            System.out.println("i is greater than or equal to 10");
+        }
+        }
+        else{
+            System.out.println("i is less than or equal to 5");
+        }
+    // Above can be simplified by using logical operator
+    if(i > 5 && i < 10){
+        System.out.println("i is greater than 5 and less than 10");
+    }
+    else{
+        System.out.println("i is less than or equal to 5 or greater than or equal to 10");
+    }
+}
 }
