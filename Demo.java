@@ -275,9 +275,39 @@ public class Demo {
         // After JDK7 Strings can also be used as switch expression. 
         // After JDK-14 switch is enhanced too much.
 
-        // 
-        int j = 5;
-        int k = 1;
+        // Nested Switch
+        // int j = 5;
+        // int k = 1;
+        // switch(j){
+        //     case 1:
+        //         System.out.println("j is 1");
+        //         break;
+        //     case 2:
+        //         System.out.println("j is 2");
+        //         break;
+        //     case 3:
+        //         System.out.println("j is 3");
+        //         break;
+        //     case 4:
+        //         System.out.println("j is 4");
+        //         break;
+        //     case 5:
+        //         System.out.println("j is 5");
+        //         switch(k){
+        //             case 1:
+        //                 System.out.println("k is 1");
+        //                 break;
+        //             case 2:
+        //                 System.out.println("k is 2");
+        //                 break;
+        //             default:
+        //                 System.out.println("k is not 1 or 2");
+        //         }
+        //         break;
+        //     default:
+        //         System.out.println("j is not between 1 and 5");
+        // }
+
         
 
 
