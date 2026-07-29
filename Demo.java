@@ -172,8 +172,8 @@ public class Demo {
         // //System.out.println(j); // 1
 
         // -------------------LOOPS--------------------------------
-        boolean c = true;
-        int i = 6;
+        // boolean c = true;
+        // int i = 6;
         // SELECTION STATEMENTS --> if, if-else, if-else-if, switch
         // Normal if statement
         // if(i > 5 && i < 10){
@@ -213,20 +213,73 @@ public class Demo {
     // }
 
     // If-else-if ladder
-    if(i < 5){
-            System.out.println("i is less than 5");
-        }
-        else if(i < 10){
-            System.out.println("i is less than 10");
-        }
-        else if(i < 15){
-            System.out.println("i is less than 15");
-        }
-        else{
-            System.out.println("i is greater than or equal to 15");
-        }
+    // if(i < 5){
+    //         System.out.println("i is less than 5");
+    //     }
+    //     else if(i < 10){
+    //         System.out.println("i is less than 10");
+    //     }
+    //     else if(i < 15){
+    //         System.out.println("i is less than 15");
+    //     }
+    //     else{
+    //         System.out.println("i is greater than or equal to 15");
+    //     }
+
+    // int age = 50; // age = 50
+    //     if(age > 80) {
+    //         System.out.println("You are very old");
+    //     }
+    //     if(age > 60) {
+    //         System.out.println("You are old");
+    //     }
+    //     if(age > 40) {
+    //         System.out.println("You are becoming old");
+    //     }
+    //     if(age > 20) {
+    //         System.out.println("You are young");
+    //     }
+    //     else {
+    //         System.out.println("You are a child");
+    //     }
+
+    // Switch statement
+    // int day = 3;
+    //     switch(day){
+    //         case 1:
+    //             System.out.println("Monday");
+    //             break;
+    //         case 2:
+    //             System.out.println("Tuesday");
+    //             break;
+    //         case 3:
+    //             System.out.println("Wednesday");
+    //             break;
+    //         case 4:
+    //             System.out.println("Thursday");
+    //             break;
+    //         case 5:
+    //             System.out.println("Friday");
+    //             break;
+    //         case 6:
+    //             System.out.println("Saturday");
+    //             break;
+    //         case 7:
+    //             System.out.println("Sunday");
+    //             break;
+    //         default:
+    //             System.out.println("Invalid day");
+    //     }
+        // switch --> limited use case -> should evaluate to byte, short, int, char, Enumeration.
+        // No duplicate cases allowed.
+        // After JDK7 Strings can also be used as switch expression. 
+        // After JDK-14 switch is enhanced too much.
+
+        // 
+        int j = 5;
+        int k = 1;
+        
 
 
-
-}
+    }
 }
