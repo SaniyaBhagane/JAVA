@@ -308,6 +308,8 @@ public class Demo {
         //         System.out.println("j is not between 1 and 5");
         // }
 
+        // Switch expressions should be evaluated to byte, short, int, char, Enumerate
+        // After JDK-7 Strings can also be used as switch expression.
         
 
 
