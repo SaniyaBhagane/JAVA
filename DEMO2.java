@@ -61,7 +61,7 @@ public class DEMO2{
         // }
         // sc.close();
 
-        // Q4. Greater no
+        // Q4. Greater no of two
         // Scanner sc = new Scanner(System.in);
         // int num1, num2;
         // System.out.print("Enter first number: ");
@@ -100,6 +100,23 @@ public class DEMO2{
         //     System.out.println("Grade c.");
         // }else if(num >= 40){
         //     System.out.println("Grade D");
+        // }sc.close();
+
+        // Q4. Greater no of three
+        // Scanner sc = new Scanner(System.in);
+        // int num1, num2, num3;
+        // System.out.print("Enter first number: ");
+        // num1 = sc.nextInt();
+        // System.out.print("Enter second number: ");
+        // num2 = sc.nextInt();
+        // System.out.println("Enter Third number:");
+        // num3 = sc.nextInt();
+        // if(num1 > num2 && num1 > num3 ){
+        //     System.out.println("The first number is greater.");
+        // }else if(num2 > num1 && num2 > num3){
+        //     System.out.println("The second number is greater.");
+        // }else{
+        //     System.out.println("The third number is greater.");
         // }sc.close();
     
     }
