@@ -102,7 +102,7 @@ public class DEMO2{
         //     System.out.println("Grade D");
         // }sc.close();
 
-        // Q4. Greater no of three
+        // Q7. Greater no of three
         // Scanner sc = new Scanner(System.in);
         // int num1, num2, num3;
         // System.out.print("Enter first number: ");
@@ -118,6 +118,35 @@ public class DEMO2{
         // }else{
         //     System.out.println("The third number is greater.");
         // }sc.close();
+
+        // Q9. Calculator(switch)
+        // int num2, num1, operator;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter First number:");
+        // num1 = sc.nextInt();
+        // System.out.print("Enter Second number: ");
+        // num2 = sc.nextInt();
+        // System.out.print("Provide operator (+, -, *, /):");
+        // operator = sc.next().charAt(0);
+        // switch (operator) {
+        //     case '+':
+        //         System.out.print("Result: " + (num1+num2));
+        //         break;
+        //     case '-':
+        //         System.out.print("Result: " + (num1-num2));
+        //         break;
+        //     case '*':
+        //         System.out.print("Result: " + (num1*num2));
+        //         break;
+        //     case '/':
+        //         System.out.print("Result: " + (num1/num2));
+        //         break;
+        //     default:
+        //         throw new AssertionError();
+        // }
+
+        // Q10. leap year check
+
     
     }
 }
