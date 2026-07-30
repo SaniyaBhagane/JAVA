@@ -1,8 +1,5 @@
-i = 1; i<= 10; i++) {
-           for(int j = 1; j <= i; j++) {
-                System.out.print("* ");
-                if(j >= 5) {
-                    continue;
-                }
-           }
-           System.out
+ow = 0; row < marks.length; row++) {
+            for(int col = 0; col < marks[row].length; col++) {
+                System.out.print(marks[row][col] + " ");
+            }
+            System.
