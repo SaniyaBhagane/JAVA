@@ -37,17 +37,30 @@ public class DEMO2{
         // }
         // sc.close();
 
-    // Q2. EVEN ODD no check
-    //     int num;
-    //     Scanner sc = new Scanner(System.in);
-    //     System.out.print("Enter a number: ");
-    //     num = sc.nextInt();
-    //     if(num % 2 == 0 ){
-    //         System.out.println(num + " is a even number");
-    //     }else{
-    //         System.out.println(num + " is a odd number");
-    //     }
-    //     sc.close();
+        // Q2. EVEN ODD no check
+        //     int num;
+        //     Scanner sc = new Scanner(System.in);
+        //     System.out.print("Enter a number: ");
+        //     num = sc.nextInt();
+        //     if(num % 2 == 0 ){
+        //         System.out.println(num + " is a even number");
+        //     }else{
+        //         System.out.println(num + " is a odd number");
+        //     }
+        //     sc.close();
 
-    // }
+        // Q3. voting age check
+        // int num;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter your age: ");
+        // num = sc.nextInt();
+        // if(num <= 18){
+        //     System.out.println("You are not eligible for voting.");
+        // }else{
+        //     System.out.println("You are eligible for voting.");
+        // }
+        // sc.close();
+
+        
+    }
 }
