@@ -74,5 +74,33 @@ public class DEMO2{
         //     System.out.println("The second number is greater.");
         // }sc.close();
         
+        // Q5. Temperature Category
+        // int num;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter today's temperature: ");
+        // num = sc.nextInt();
+        // if(num < 10){
+        //     System.out.println("Today temperature is very cold.");
+        // }else if(num >= 10 && num < 25){
+        //     System.out.println("Today temperature is moderate.");
+        // }else{
+        //     System.out.println("Today temperature is Hot.");
+        // }sc.close();
+
+        // Q6. Student Grade Calculator
+        // int num;
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter your marks: ");
+        // num = sc.nextInt();
+        // if(num >= 90){
+        //     System.out.println("Grade A.");
+        // }else if(num >= 75){
+        //     System.out.println("Grade B.");
+        // }else if(num >= 60){
+        //     System.out.println("Grade c.");
+        // }else if(num >= 40){
+        //     System.out.println("Grade D");
+        // }sc.close();
+    
     }
 }
