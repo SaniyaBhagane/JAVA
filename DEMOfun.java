@@ -82,23 +82,51 @@ public class DEMOfun {
     // }
 
 
+    // public static void main(String[] args) {
+    //     // Chaining of functions
+    //     fun1();
+    //     System.out.println("bye");
+    // }
+
+    // static void fun1() {
+    //     fun2();
+    //     System.out.println("Hi");
+    // }
+
+    // static void fun2() {
+    //     fun3();
+    //     System.out.println("Hello");
+    // }
+
+    // static void fun3() {
+    //     System.out.println("How are you");
+    // }
+
+
+    static String name = "Aditya"; // global scope
     public static void main(String[] args) {
-        // Chaining of functions
-        fun1();
-        System.out.println("bye");
+        // Scope of a variable
+
+        int x = 4;  // local scope
+        int y = 5;
+
+        if(x == 4) {
+            int j = 7;
+            System.out.println(j);
+        }
+
+        System.out.println(x + " , " + y);
+
+        System.out.println(name);
+
+        fun();
     }
 
-    static void fun1() {
-        fun2();
-        System.out.println("Hi");
-    }
+    static void fun() {
+        int x = 4;  // local scope
+        int y = 5;
+        System.out.println(x + " , " + y);
 
-    static void fun2() {
-        fun3();
-        System.out.println("Hello");
-    }
-
-    static void fun3() {
-        System.out.println("How are you");
+        System.out.println(name);
     }
 }
