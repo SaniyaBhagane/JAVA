@@ -1,35 +1,75 @@
 public class OOPS {
-    public static void main(String[] args) {
-        Student s1 = new Student();
-        Student s2 = new Student();
+//     public static void main(String[] args) {
+//         Student s1 = new Student();
+//         Student s2 = new Student();
 
-        s1.name = "Aditya";
-        s1.age = 28;
-        s1.rollNo = 101;
-        s1.CollegeName = "IIT";
+//         s1.name = "Aditya";
+//         s1.age = 28;
+//         s1.rollNo = 101;
+//         s1.CollegeName = "IIT";
         
-        s2.name = "Rohit";
-        s2.age =28;
-        s2.rollNo = 102;
-        s2.CollegeName = "IIT";
+//         s2.name = "Rohit";
+//         s2.age =28;
+//         s2.rollNo = 102;
+//         s2.CollegeName = "IIT";
 
-        s1.markAttendence();
-        s2.markAttendence();
+//         s1.markAttendence();
+//         s2.markAttendence();
 
-        s1.print();
-        s2.print();
+//         s1.print();
+//         s2.print();
+//     }
+// }
+
+// class Student{
+//     String name;
+//     int age;
+//     int rollNo;
+//     String CollegeName;
+//     void markAttendence(){
+//         System.out.println("Attendence Marked by " + name);
+//     }
+//     void print(){
+//         System.out.println(name + " " + age + " " + rollNo + " " + CollegeName);
+//     }
+
+// ----------------CONSTRUCTOR-----------
+ public static void main(String[] args) {
+        
+       Student s1 = new Student();
+       s1.name = "Aditya";
+       s1.age = 28;
+       s1.rollNumber = 101;
+       s1.college = "IIT Guwahati"; 
+
+       // Constructors --> To create an Object
+
+       System.out.println(s1.name);
+       System.out.println(s1.age);
+       System.out.println(s1.rollNumber);
+       System.out.println(s1.college);
+
+        // int x; // local variable --> NO default values
+        // System.out.println(x);
+
     }
 }
 
-class Student{
-    String name;
-    int age;
-    int rollNo;
-    String CollegeName;
-    void markAttendence(){
-        System.out.println("Attendence Marked by " + name);
-    }
-    void print(){
-        System.out.println(name + " " + age + " " + rollNo + " " + CollegeName);
-    }
+/*
+Integer --> 0
+floating --> 0.0
+Boolean --> false
+String --> null (nothing)
+
+*/
+
+class Student {
+    String name; // information/data/characteristics --> instance variables
+    int age; 
+    int rollNumber;
+    String college;
+
+    void markAttendance() { // behaviours --> functions --> instance methods
+        System.out.println("Attendance marked for student " + name);
+    }   
 }
