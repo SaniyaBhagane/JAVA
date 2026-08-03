@@ -63,33 +63,93 @@
 
 // ----------------------INHERITANCE----------------------------------
 
-public class opps2 {
-    public static void main(String[] args) {
-        EngineeringStudent es = new EngineeringStudent();
-        es.markAttendance();
-        es.attendLab();
+// public class opps2 {
+//     public static void main(String[] args) {
+//         EngineeringStudent es = new EngineeringStudent();
+//         es.markAttendance();
+//         es.attendLab();
 
-        Student s1 = new Student();
-        s1.markAttendance();
-       // s1.attendLab(); (wrong)
-    }
-}
-
+//         Student s1 = new Student();
+//         s1.markAttendance();
+//        // s1.attendLab(); (wrong)
+//     }
+// }
 /*
 parent (Superclass) --> child (subclass)
 */
+// class Student {
+//     String name;
+//     int age;
+//     public void markAttendance() {
+//         System.out.println("Attendance marked");
+//     }
+// }
+// class EngineeringStudent extends Student {
+//     void attendLab() {
+//         System.out.println("lab attended");
+//     }
+// }
 
-class Student {
-    String name;
-    int age;
+//Types of inheritance
+// Simple inheritance
+// multi-level inheritance 
+// hierarchical inheritance
+// multiple inheritance (not supported in java)
 
-    public void markAttendance() {
-        System.out.println("Attendance marked");
-    }
-}
+// public class opps2 {
+//     public static void main(String[] args) {
+//         //CSEEngineeringStudent cs1 = new CSEEngineeringStudent();
+//     }
+// }
 
-class EngineeringStudent extends Student {
-    void attendLab() {
-        System.out.println("lab attended");
-    }
-}
+// class Student { // Parent -> A
+//     String name;
+//     int age;
+
+//     public void markAttendance() {
+//         System.out.println("Attendance marked");
+//     }
+// }
+
+// class EngineeringStudent extends Student { // Child. --> B
+//     void attendLab() {
+//         System.out.println("lab attended for engineerng student");
+//     }
+// }
+
+// class MedicalStudent extends Student { // Child. --> C
+//     void attendLab() {
+//         System.out.println("lab attended for medical student");
+//     }
+// }
+
+// class CSEEngineeringStudent extends EngineeringStudent {
+//     void attendCSELab() {
+
+//     }
+// }
+
+/*
+Multi-level
+
+Student 
+|
+EngineeringStudent
+|
+CSEEngineeringStudent
+*/
+
+/*
+Hierrarchy 
+        A
+      /   \
+     B     C 
+
+*/
+
+/*
+Multiple 
+        A   B
+         \  /
+          C
+*/     
