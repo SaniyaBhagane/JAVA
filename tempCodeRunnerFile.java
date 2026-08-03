@@ -1,5 +1,5 @@
-ow = 0; row < marks.length; row++) {
-            for(int col = 0; col < marks[row].length; col++) {
-                System.out.print(marks[row][col] + " ");
-            }
-            System.
+n(String[] args) {
+        System.out.println("Number of arguments are " + args.length);
+        for(int i=0; i<args.length; i++) {
+            System.out.println("Argument " + i + " = " + args[i]);
+        }
