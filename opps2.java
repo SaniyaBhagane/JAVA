@@ -550,12 +550,8 @@ Static block
 
 /*
 Static Nested class
-
 Inner Class
-
 Anonymous class --> Lambdas
-
 Local class
-
 */
 
