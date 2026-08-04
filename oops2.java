@@ -153,3 +153,42 @@ Multiple
          \  /
           C
 */     
+
+//--------------------------ABSTRACTION------------
+public class oops2{
+        public static void main(String[] args){
+                Car fcar = new FuelCar();
+                Car ecar = new ElectricCar();
+                fcar.start();
+                fcar.accelerate();
+                fcar.brake();
+                ecar.accelerate();
+                ecar.brake();
+        }
+}
+
+abstract class Car{
+        void start(){
+                System.out.println("Car started.");
+        }
+        abstract void accelerate();
+        abstract void brake();
+}
+class FuelCar extends Car{
+        @Override
+        void accelerate(){
+                System.out.println("Fuel car accelerated.");
+        }
+        void brake(){
+                System.out.println("Fuel car stopped.");
+        }
+}
+class ElectricCar extends Car{
+        @Override
+        void accelerate(){
+                System.out.println("Electric car accelerated.");
+        }
+        void brake(){
+                System.out.println("Electric car stopped.");
+        }
+}
