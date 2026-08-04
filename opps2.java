@@ -287,3 +287,100 @@ Multiple
 //         return 20;
 //     }
 // }
+
+// public class opps2 {
+//     public static void main(String[] args) {
+//     }
+// }
+// class Sample {}
+// class Sample2 {}
+// 1. Why one public class per file.
+//2 WHy name of that public class should be same as filename
+
+// JVM --> Demo.java. --> Demo.main()
+
+//BOXING AND UNBOXING
+// public class opps2 {
+//     public static void main(String[] args) {
+        // Autoboxing
+        // int x = 10;
+        // Integer y = x;  // autoboxing
+        // System.out.println(x);
+        // System.out.println(y);  // unboxing
+
+        // //Unboxing
+        // Integer a = 20; // Autoboxing
+        // int b = a; // unboxing
+        // System.out.println(a); // unboxing
+        // System.out.println(b);  
+        // int x = 50;
+        // printInteger(x);
+        // Integer a = 10;
+        // Integer b = 20;
+        // int sum = a.intValue() + b.intValue();
+        // System.out.println(sum);
+    //     Integer x = null;
+    //     int y = x;
+    //     System.out.println(y);
+    // }
+    // static void printInteger(Integer x) {
+    //     System.out.println(x);
+    // }
+// }
+// 1. Assignments
+// 2. Method calls
+// 3. Arithmetic operations
+
+// public class opps2 {
+//     public static void main(String[] args) {
+//         // int x = 100;
+//         // int y = 100;
+//         // System.out.println(x == y);
+//         Integer a = 200;
+//         Integer b = 200;
+//         // a == b --> If a and b points to same reference
+//         System.out.println(a.equals(b));
+//     }
+// }
+
+// public class opps2 {
+//     public static void main(String[] args) {
+//         Animal a = new Dog("Bruno");
+//         a.makeSound();
+//     }
+// }
+// abstract class Animal {
+//     String name;
+//     Animal(String name) {
+//         this.name = name;
+//     }
+//     void makeSound() {
+//         System.out.println("making sound");
+//     }
+//     final void sleep() {
+//         System.out.println("Sleeping");
+//     }
+// }
+// class Dog extends Animal {
+//     Dog(String name) {
+//         super(name);
+//     }
+//     @Override
+//     void makeSound() {
+//         System.out.println("Making barking sound");
+//     }
+// }
+
+// Abstract classes
+//1. Cannot be instantiated directly
+//2. Can contain abstract method (method without implementations)
+//3. Can also contain normal methods.
+//4. Is meant to be extended.
+
+//. Questions:
+//1. Can abstract classes have constructors?  --> Yes
+//2. Can abstract classes be final ? --> No
+//3. Can abstract class have static methods/variables ? --> Yes
+//4. Can abstract classes private methods ? --> yes but non abstract
+//5. Can abstract classes have final methods ? --> yes but non abstract
+//6. Can abstract classes have no abstract method ? --> Yes
