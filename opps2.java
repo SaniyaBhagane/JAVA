@@ -503,6 +503,8 @@ Multiple
 //         local.sayHello();
 //     }
 // }
+// Use cases of local classes
+
 /*
 Contructor
 Method
