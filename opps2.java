@@ -435,7 +435,7 @@ Multiple
 // public class opps2{
 //     public static void main(String[] args) {
 //         Outer outer = new Outer();
-//         //Outer.Inner inner = new Outer.Inner();
+//         //Outer.Inner inner = new Outer.Inner(); invalid
 //         Outer.Inner inner =  outer.new Inner();
 //        // Outer.Inner inner = new Outer().new Inner();
 //         inner.fun();
@@ -458,3 +458,55 @@ Multiple
 //         }
 //     }
 // }
+// Use cases of inner classes
+/*
+    1. As helper class for any outer class.
+    2. If you want to have non static methods inside a nested class.
+    3. If you want to access outer class members from inner class.
+    4. Event listeners in GUI programming.
+    5. Threading
+    6. Callback functions
+    7. Adapter design pattern
+    8. Iterator design pattern
+    9. Observer design pattern
+    10. Decorator design pattern
+    11. Strategy design pattern
+    12. State design pattern
+    13. Command design pattern
+    14. Visitor design pattern
+    15. Mediator design pattern
+    16. Memento design pattern
+    17. Prototype design pattern
+    18. Singleton design pattern
+    19. Factory design pattern
+    20. Abstract factory design pattern
+*/
+
+//LOCAL CLASS
+// public class opps2{
+//      public static void main(String[] args) {
+//         Outer outer = new Outer();
+//         outer.greet();
+//     }
+// }
+// // Effective final variable
+// class Outer {
+//     void greet() {
+//         int y = 5;
+//         y++;
+//         class Local {
+//             void sayHello() {
+//                 System.out.println(y);
+//             }
+//         }
+//         Local local  = new Local();
+//         local.sayHello();
+//     }
+// }
+/*
+Contructor
+Method
+If
+Loop
+Static block
+*/
