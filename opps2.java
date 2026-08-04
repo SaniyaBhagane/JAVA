@@ -155,40 +155,88 @@ Multiple
 */     
 
 //--------------------------ABSTRACTION------------
-public class oops2{
-        public static void main(String[] args){
-                Car fcar = new FuelCar();
-                Car ecar = new ElectricCar();
-                fcar.start();
-                fcar.accelerate();
-                fcar.brake();
-                ecar.accelerate();
-                ecar.brake();
-        }
-}
+// public class oops2{
+//         public static void main(String[] args){
+//                 Car fcar = new FuelCar();
+//                 Car ecar = new ElectricCar();
+//                 fcar.start();
+//                 fcar.accelerate();
+//                 fcar.brake();
+//                 ecar.accelerate();
+//                 ecar.brake();
+//         }
+// }
 
-abstract class Car{
-        void start(){
-                System.out.println("Car started.");
-        }
-        abstract void accelerate();
-        abstract void brake();
-}
-class FuelCar extends Car{
-        @Override
-        void accelerate(){
-                System.out.println("Fuel car accelerated.");
-        }
-        void brake(){
-                System.out.println("Fuel car stopped.");
-        }
-}
-class ElectricCar extends Car{
-        @Override
-        void accelerate(){
-                System.out.println("Electric car accelerated.");
-        }
-        void brake(){
-                System.out.println("Electric car stopped.");
-        }
-}
+// abstract class Car{
+//         void start(){
+//                 System.out.println("Car started.");
+//         }
+//         abstract void accelerate();
+//         abstract void brake();
+// }
+// class FuelCar extends Car{
+//         @Override
+//         void accelerate(){
+//                 System.out.println("Fuel car accelerated.");
+//         }
+//         void brake(){
+//                 System.out.println("Fuel car stopped.");
+//         }
+// }
+// class ElectricCar extends Car{
+//         @Override
+//         void accelerate(){
+//                 System.out.println("Electric car accelerated.");
+//         }
+//         void brake(){
+//                 System.out.println("Electric car stopped.");
+//         }
+// }
+
+//INTERFACE
+// public class opps2{
+//         public static void main(String[] args) {
+//                 Car fcar = new FuelCar();
+//                 Car ecar = new ElectricCar();
+//                 fcar.start();
+//                 fcar.accelerate();
+//                 fcar.brake();
+//                 ecar.start();
+//                 ecar.accelerate();
+//                 ecar.brake();
+//         }
+// }
+// interface Car{
+//     void start();
+//     void accelerate();
+//     void brake();    
+// }
+// class FuelCar implements Car{
+//     @Override
+//     public void start(){
+//         System.out.println("Fuel car started.");
+//     }
+//     @Override
+//     public void accelerate(){
+//         System.out.println("Fuel car accelerated.");
+//     }
+//     @Override
+//     public void brake(){
+//         System.out.println("Fuel car stopped.");
+//     }
+// }
+// class ElectricCar implements Car{
+//     @Override
+//     public void start(){
+//         System.out.println("Electric car started.");
+//     }
+//     @Override
+//     public void accelerate(){
+//         System.out.println("Electric car accelerated.");
+//     }
+//     @Override
+//     public void brake(){
+//         System.out.println("Electric car stopped.");
+//     }
+// }
+
