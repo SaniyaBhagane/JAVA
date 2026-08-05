@@ -503,8 +503,6 @@ Multiple
 //         local.sayHello();
 //     }
 // }
-// Use cases of local classes
-
 /*
 Contructor
 Method
@@ -555,3 +553,122 @@ Anonymous class --> Lambdas
 Local class
 */
 
+//----------------------INPUT OUTPUT---------------------------
+// public class opps2{
+//     public static void main(String[] args) {
+//         System.out.println("Hello");
+//         System.err.println("Bye");
+//         int age = -3;
+//         if(age < 0) {
+//             System.err.println("Invalid age");
+//         }
+//     }
+// }
+// System class --> PrintStream out
+// PrintStream --> println()
+// err --> error
+// out --> output
+
+// import java.io.IOException;
+// public class opps2 {
+//     public static void main(String[] args) throws IOException {
+//         int x = System.in.read();
+//         System.out.println((char)x);
+//     }
+// }
+// A --> 65 --> Binary form of 65
+
+// Scanner class
+// import java.util.Scanner;
+// public class opps2{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int age = sc.nextInt();
+//         String name = sc.nextLine();
+//         System.out.println("age = " + age);
+//         System.out.println("Name = " + name);
+//     }
+// }
+
+//IMMUTABLE CLASSES
+// public class opps2{
+//     public static void main(String[] args) {
+//         College college = new College("IIT G", "Assam");
+//         Student s1 = new Student(28, "Aditya", college);
+//         System.out.println(s1.getCollege().name); // IIT G
+//         s1.getCollege().name = "IIT B";
+//         System.out.println(s1.getCollege().name); // IIT B
+//     }
+// }
+// (NOt purely immutable)
+// final class Student {
+//     private final int age;
+//     private final String name;
+//     private final College college;
+//     Student(int age, String name, College college) {
+//         this.age = age;
+//         this.name = name;
+//         this.college = college;
+//     }
+//     // getters
+//     public int getAge() {
+//         return this.age;
+//     }
+//     public String getName() {
+//         return this.name;
+//     }
+//     public College getCollege() {
+//         return this.college;
+//     }
+// }
+// // Mutable
+// class College {
+//     String name;
+//     String address;
+//     College(String name, String address) {
+//         this.name = name;
+//         this.address = address;
+//     }
+// }
+
+// DEFENSIVE COPY
+// public class opps2{
+//     public static void main(String[] args) {
+//         College college = new College("IIT G", "Assam");
+//         Student s1 = new Student(28, "Aditya", college);
+//         System.out.println(s1.getCollege().name); // IIT G
+//         s1.getCollege().name = "IIT B";
+//         System.out.println(s1.getCollege().name); // IIT G
+//     }
+// }
+// // Immutable
+// // defensive copy of college (non primitive)
+// final class Student {
+//     private final int age;
+//     private final String name;
+//     private final College college;
+//     Student(int age, String name, College college) {
+//         this.age = age;
+//         this.name = name;
+//         this.college = new College(college.name, college.address);
+//     }
+//     // getters
+//     public int getAge() {
+//         return this.age;
+//     }
+//     public String getName() {
+//         return this.name;
+//     }
+//     public College getCollege() {
+//         return new College(this.college.name, this.college.address);
+//     }
+// }
+// // Mutable
+// class College {
+//     String name;
+//     String address;
+//     College(String name, String address) {
+//         this.name = name;
+//         this.address = address;
+//     }
+// }
