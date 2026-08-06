@@ -677,7 +677,7 @@ Local class
 // tostring(), equals(), hashcode(), getClass()
 import java.util.Objects;
 public class opps2{
-    public static void main(String[] args){
+    public static void main(String[] args) throws CloneNotSupportedException {
         Student s1 = new Student();
         s1.name = "Aditya";
         s1.age = 28;
@@ -698,11 +698,15 @@ public class opps2{
         // System.out.println(s1.getClass().getName());
         // System.out.println(s2.getClass().getName());
         // System.out.println(s1 instanceof Object);
+    
+        Student s4 = (Student) s1.clone();
+        System.out.println(s4.age);
+        System.out.println(s4.name);
     }
 }
 // instanceOf operator -> Check if an object is instance of a class or any of its subclass
 // gertClass() method --> returns the runtime class of an object which it is currently pointing to. It returns a Class object which contains the name of the class, its methods, fields, etc.
-class Student{
+class Student implements Cloneable{
     String name;
     int age;
     @Override
@@ -729,5 +733,9 @@ class Student{
         // result = result * 31 + (name == null ? 0 : name.hashCode());
         // return result;
         return Objects.hash(name, age);
+    }
+
+    protected Object clone() throws CloneNotSupportedException{
+        return super.clone();
     }
 }
