@@ -695,9 +695,9 @@ public class opps2{
 
         // System.out.println(s1.hashCode() == s2.hashCode()); // false as without overriding hashcode method it will check for reference equality
     
-        System.out.println(s1.getClass().getName());
-        System.out.println(s2.getClass().getName());
-        System.out.println(s1 instanceof Object);
+        // System.out.println(s1.getClass().getName());
+        // System.out.println(s2.getClass().getName());
+        // System.out.println(s1 instanceof Object);
     }
 }
 // instanceOf operator -> Check if an object is instance of a class or any of its subclass
