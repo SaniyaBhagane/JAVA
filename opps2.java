@@ -682,7 +682,16 @@ public class opps2{
         s1.name = "Aditya";
         s1.age = 28;
         // System.out.println(s1.toString());
-        System.out.println(s1);
+        // System.out.println(s1);
+
+        Student s2 = new Student();
+        s2.name = "Aditya";
+        s2.age = 28;
+        Student s3 = null;
+        Integer i = 28;
+        System.out.println(s1.equals(s1));   //true
+        System.out.println(s1.equals(s2));      //false as without overriding equals method it will check for reference equality
+        System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
     }
 }
 class Student{
@@ -692,4 +701,15 @@ class Student{
     public String toString(){
         return (name + ", " + age);
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj) return true;
+        if(obj == null) return false;
+        if(getClass() != obj.getClass()){
+            return false;
+        }
+        Student s = (Student) obj;
+        return (this.name.equals(s.name) && this.age == s.age);
+    }  
 }
