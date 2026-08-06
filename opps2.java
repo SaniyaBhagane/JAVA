@@ -675,69 +675,69 @@ Local class
 
 //---------------OBJECT CLASS ----------------
 // tostring(), equals(), hashcode(), getClass(), finalize(), clone()
-import java.util.Objects;
-public class opps2{
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Student s1 = new Student();
-        s1.name = "Aditya";
-        s1.age = 28;
-        // System.out.println(s1.toString());
-        // System.out.println(s1);
+// import java.util.Objects;
+// public class opps2{
+//     public static void main(String[] args) throws CloneNotSupportedException {
+//         Student s1 = new Student();
+//         s1.name = "Aditya";
+//         s1.age = 28;
+//         // System.out.println(s1.toString());
+//         // System.out.println(s1);
 
-        Student s2 = new Student();
-        s2.name = "Aditya";
-        s2.age = 28;
-        Student s3 = null;
-        // Integer i = 28;
-        // System.out.println(s1.equals(s1));   //true
-        // System.out.println(s1.equals(s2));      //false as without overriding equals method it will check for reference equality
-        // System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
+//         Student s2 = new Student();
+//         s2.name = "Aditya";
+//         s2.age = 28;
+//         Student s3 = null;
+//         // Integer i = 28;
+//         // System.out.println(s1.equals(s1));   //true
+//         // System.out.println(s1.equals(s2));      //false as without overriding equals method it will check for reference equality
+//         // System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
 
-        // System.out.println(s1.hashCode() == s2.hashCode()); // false as without overriding hashcode method it will check for reference equality
+//         // System.out.println(s1.hashCode() == s2.hashCode()); // false as without overriding hashcode method it will check for reference equality
     
-        // System.out.println(s1.getClass().getName());
-        // System.out.println(s2.getClass().getName());
-        // System.out.println(s1 instanceof Object);
+//         // System.out.println(s1.getClass().getName());
+//         // System.out.println(s2.getClass().getName());
+//         // System.out.println(s1 instanceof Object);
     
-        Student s4 = (Student) s1.clone();
-        System.out.println(s4.age);
-        System.out.println(s4.name);
-    }
-}
-// instanceOf operator -> Check if an object is instance of a class or any of its subclass
-// gertClass() method --> returns the runtime class of an object which it is currently pointing to. It returns a Class object which contains the name of the class, its methods, fields, etc.
-// clone method --> creates and returns a shallow copy of the object. It is defined in Object class and is protected. To use it, we need to override it in our class and implement Cloneable interface. If we don't implement Cloneable interface, it will throw CloneNotSupportedException.
-// finalize() method --> is called by the garbage collector before an object is destroyed. It is used to perform cleanup operations like closing files, releasing resources, etc. It is defined in Object class and can be overridden in our class. It is not guaranteed to be called immediately when an object becomes unreachable, so it should not be relied upon for critical cleanup tasks.
-class Student implements Cloneable{
-    String name;
-    int age;
-    @Override
-    public String toString(){
-        return (name + ", " + age);
-    }
+//         Student s4 = (Student) s1.clone();
+//         System.out.println(s4.age);
+//         System.out.println(s4.name);
+//     }
+// }
+// // instanceOf operator -> Check if an object is instance of a class or any of its subclass
+// // gertClass() method --> returns the runtime class of an object which it is currently pointing to. It returns a Class object which contains the name of the class, its methods, fields, etc.
+// // clone method --> creates and returns a shallow copy of the object. It is defined in Object class and is protected. To use it, we need to override it in our class and implement Cloneable interface. If we don't implement Cloneable interface, it will throw CloneNotSupportedException.
+// // finalize() method --> is called by the garbage collector before an object is destroyed. It is used to perform cleanup operations like closing files, releasing resources, etc. It is defined in Object class and can be overridden in our class. It is not guaranteed to be called immediately when an object becomes unreachable, so it should not be relied upon for critical cleanup tasks.
+// class Student implements Cloneable{
+//     String name;
+//     int age;
+//     @Override
+//     public String toString(){
+//         return (name + ", " + age);
+//     }
 
-    @Override
-    public boolean equals(Object obj){
-        if(this == obj) return true;
-        if(obj == null) return false;
-        if(getClass() != obj.getClass()){
-            return false;
-            //checking if obj is instance of Student class or not. If not handled then it will give class cast exception while type casting obj to Student
-        }
-        Student s = (Student) obj;
-        return (this.name.equals(s.name) && this.age == s.age);
-    }  
+//     @Override
+//     public boolean equals(Object obj){
+//         if(this == obj) return true;
+//         if(obj == null) return false;
+//         if(getClass() != obj.getClass()){
+//             return false;
+//             //checking if obj is instance of Student class or not. If not handled then it will give class cast exception while type casting obj to Student
+//         }
+//         Student s = (Student) obj;
+//         return (this.name.equals(s.name) && this.age == s.age);
+//     }  
 
-    @Override
-    public int hashCode(){
-        // isult = result * 31 + age;
-        // result = result * 31 + name.hashCode();
-        // result = result * 31 + (name == null ? 0 : name.hashCode());
-        // return result;
-        return Objects.hash(name, age);
-    }
+//     @Override
+//     public int hashCode(){
+//         // isult = result * 31 + age;
+//         // result = result * 31 + name.hashCode();
+//         // result = result * 31 + (name == null ? 0 : name.hashCode());
+//         // return result;
+//         return Objects.hash(name, age);
+//     }
 
-    protected Object clone() throws CloneNotSupportedException{
-        return super.clone();
-    }
-}
+//     protected Object clone() throws CloneNotSupportedException{
+//         return super.clone();
+//     }
+// }
