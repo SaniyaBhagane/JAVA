@@ -674,8 +674,8 @@ Local class
 // }
 
 //---------------OBJECT CLASS ----------------
-// tostring()
-// import java.util.objects;
+// tostring(), equals(), hashcode()
+import java.util.Objects;
 public class opps2{
     public static void main(String[] args){
         Student s1 = new Student();
@@ -688,10 +688,12 @@ public class opps2{
         s2.name = "Aditya";
         s2.age = 28;
         Student s3 = null;
-        Integer i = 28;
-        System.out.println(s1.equals(s1));   //true
-        System.out.println(s1.equals(s2));      //false as without overriding equals method it will check for reference equality
-        System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
+        // Integer i = 28;
+        // System.out.println(s1.equals(s1));   //true
+        // System.out.println(s1.equals(s2));      //false as without overriding equals method it will check for reference equality
+        // System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
+
+        // System.out.println(s1.hashCode() == s2.hashCode()); // false as without overriding hashcode method it will check for reference equality
     }
 }
 class Student{
@@ -708,8 +710,18 @@ class Student{
         if(obj == null) return false;
         if(getClass() != obj.getClass()){
             return false;
+            //checking if obj is instance of Student class or not. If not handled then it will give class cast exception while type casting obj to Student
         }
         Student s = (Student) obj;
         return (this.name.equals(s.name) && this.age == s.age);
     }  
+
+    @Override
+    public int hashCode(){
+        // isult = result * 31 + age;
+        // result = result * 31 + name.hashCode();
+        // result = result * 31 + (name == null ? 0 : name.hashCode());
+        // return result;
+        return Objects.hash(name, age);
+    }
 }
