@@ -674,7 +674,7 @@ Local class
 // }
 
 //---------------OBJECT CLASS ----------------
-// tostring(), equals(), hashcode()
+// tostring(), equals(), hashcode(), getClass()
 import java.util.Objects;
 public class opps2{
     public static void main(String[] args){
@@ -694,8 +694,14 @@ public class opps2{
         // System.out.println(s1.equals(s3)); // false give  null pointer exception if not handled by overriding
 
         // System.out.println(s1.hashCode() == s2.hashCode()); // false as without overriding hashcode method it will check for reference equality
+    
+        System.out.println(s1.getClass().getName());
+        System.out.println(s2.getClass().getName());
+        System.out.println(s1 instanceof Object);
     }
 }
+// instanceOf operator -> Check if an object is instance of a class or any of its subclass
+// gertClass() method --> returns the runtime class of an object which it is currently pointing to. It returns a Class object which contains the name of the class, its methods, fields, etc.
 class Student{
     String name;
     int age;
