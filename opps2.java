@@ -674,7 +674,7 @@ Local class
 // }
 
 //---------------OBJECT CLASS ----------------
-// tostring(), equals(), hashcode(), getClass()
+// tostring(), equals(), hashcode(), getClass(), finalize(), clone()
 import java.util.Objects;
 public class opps2{
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -706,6 +706,8 @@ public class opps2{
 }
 // instanceOf operator -> Check if an object is instance of a class or any of its subclass
 // gertClass() method --> returns the runtime class of an object which it is currently pointing to. It returns a Class object which contains the name of the class, its methods, fields, etc.
+// clone method --> creates and returns a shallow copy of the object. It is defined in Object class and is protected. To use it, we need to override it in our class and implement Cloneable interface. If we don't implement Cloneable interface, it will throw CloneNotSupportedException.
+// finalize() method --> is called by the garbage collector before an object is destroyed. It is used to perform cleanup operations like closing files, releasing resources, etc. It is defined in Object class and can be overridden in our class. It is not guaranteed to be called immediately when an object becomes unreachable, so it should not be relied upon for critical cleanup tasks.
 class Student implements Cloneable{
     String name;
     int age;
