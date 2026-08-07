@@ -805,22 +805,56 @@ Problems with this approach :
 //     public static final int PENDING = 3;
 // }
 
+// public class opps2{
+//     public static void main(String[] args) {
+//         Direction d = Direction.SOUTH;
+//         System.out.println(d.getDegree());
+//     }
+// }
+// enum Direction {
+//     NORTH(0),
+//     SOUTH(180),
+//     EAST(90),
+//     WEST(270);
+//     private int degree;
+//     Direction(int degree) {
+//         this.degree = degree;
+//     }
+//     public int getDegree() {
+//         return this.degree;
+//     }
+// }
+
 public class opps2{
     public static void main(String[] args) {
-        Direction d = Direction.SOUTH;
-        System.out.println(d.getDegree());
+        Direction d = Direction.NORTH;
+        d.move();
     }
 }
 enum Direction {
-    NORTH(0),
-    SOUTH(180),
-    EAST(90),
-    WEST(270);
-    private int degree;
-    Direction(int degree) {
-        this.degree = degree;
-    }
-    public int getDegree() {
-        return this.degree;
-    }
+    NORTH {
+        @Override
+        public void move() {
+            System.out.println("Move up (Y + 1)");
+        }
+    },
+    SOUTH {
+        @Override
+        public void move() {
+            System.out.println("Move down (Y - 1)");
+        }
+    },
+    EAST {
+        @Override
+        public void move() {
+            System.out.println("Move right (X + 1)");
+        }
+    },
+    WEST {
+        @Override
+        public void move() {
+            System.out.println("Move left (X - 1)");
+        }
+    };
+    public abstract void move();
 }
