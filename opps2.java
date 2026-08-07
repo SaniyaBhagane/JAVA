@@ -743,8 +743,8 @@ Local class
 // }
 
 //----------ENUMS--------------------
-public class opps2{
-    public static void main(String[] args) {
+// public class opps2{
+//     public static void main(String[] args) {
         // int status = PaymentStatus.SUCCESS;
 
         // System.out.println(status);
@@ -755,14 +755,14 @@ public class opps2{
 
         // }
 
-        String status = PaymentStatus.SUCCESS;
-        System.out.println(status);
+//         String status = PaymentStatus.SUCCESS;
+//         System.out.println(status);
 
-        if(status == "success") {
+//         if(status == "success") {
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
 // payment status --> success, failed, pending
 // final
@@ -773,15 +773,34 @@ Problems with this approach :
 2. Poor Readability
 3. No Grouping od related enitites
 */
+// class PaymentStatus {
+//     public static final String SUCCESS = "Success";
+//     public static final String FAILED = "Failed";
+//     public static final String PENDING = "Pending";
+// }
+// class Role {
+//     public static final int USER = 1;
+//     public static final int ADMIN = 2;
+//     public static final int MANAGER = 2;
+// }
 
-class PaymentStatus {
-    public static final String SUCCESS = "Success";
-    public static final String FAILED = "Failed";
-    public static final String PENDING = "Pending";
+public class opps2{
+    public static void main(String[] args) {
+        //int status = PaymentStatus2.SUCCESS;
+        //PaymentStatus status = PaymentStatus.FAILED;
+        PaymentStatus status = PaymentStatus.FAILED;
+        System.out.println(status.name());
+    }
 }
-
-class Role {
-    public static final int USER = 1;
-    public static final int ADMIN = 2;
-    public static final int MANAGER = 2;
+// Enum --> Enumerations ( Enumerated type)
+// Enum --> Predefined set of constants.
+enum PaymentStatus {
+    SUCCESS,
+    FAILED,
+    PENDING;
+}
+class PaymentStatus2 {
+    public static final int SUCCESS = 1;
+    public static final int FAILED = 2;
+    public static final int PENDING = 3;
 }
