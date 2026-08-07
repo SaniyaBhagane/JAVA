@@ -954,27 +954,61 @@ Problems with this approach :
 //     }
 // }
 
-public class opps2{
-    public static void main(String[] args) {
-        Dog d = new StreetDog();
-        d.eat();
-        d.bark();      
-    }
-}
-// Interface inheritance
-interface Animal {
-    void eat();
-} 
-interface Dog extends Animal {
-    void bark();
-}
-class StreetDog implements Dog {
-    @Override
-    public void eat() {
-        System.out.println("Eating");
-    }
-    @Override
-    public void bark() {
-        System.out.println("Barking");
-    }
-}
+// public class opps2{
+//     public static void main(String[] args) {
+//         Dog d = new StreetDog();
+//         d.eat();
+//         d.bark();      
+//     }
+// }
+// // Interface inheritance
+// interface Animal {
+//     void eat();
+// } 
+// interface Dog extends Animal {
+//     void bark();
+// }
+// class StreetDog implements Dog {
+//     @Override
+//     public void eat() {
+//         System.out.println("Eating");
+//     }
+//     @Override
+//     public void bark() {
+//         System.out.println("Barking");
+//     }
+// }
+
+
+// public class opps2{
+//     public static void main(String[] args) {
+//         Vehicle v = new Car();
+//         v.drive();
+//         //Vehicle.brake();
+//     }
+// }
+// After Java 8 --> Default Methods, Static methods
+// From Java 9 -> Private methods
+// List Interface --> methods
+// interface List {
+//     default void pushBack() {
+//     }
+// }
+// interface Vehicle {
+//     default void drive() {
+//         System.out.println("Vehicle is driving");
+//         accelerate();
+//     }
+//     static void brake() {
+//          System.out.println("Vehicle is applying brake");
+//     }
+//     private void accelerate() {
+//         System.out.println("Vehicle is Accelerating");
+//     }
+// }
+// class Car implements Vehicle {
+//     // @Override
+//     // public void drive() {
+//     //     System.out.println("Car is driving");
+//     // }
+// }
