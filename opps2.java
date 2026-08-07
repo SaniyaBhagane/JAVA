@@ -859,33 +859,56 @@ Problems with this approach :
 //     public abstract void move();
 // }
 
-public class opps2{
-    public static void main(String[] args){
+// public class opps2{
+//     public static void main(String[] args){
         // Direction[] directions = Direction.values();
         // for(Direction d : directions){
         //     System.out.println(d.name());
         // }
-
-        Direction d = Direction.valueOf("EAST");
-        System.out.println(d.name());
-        // System.out.println(d.toString());
-        System.out.println(d.ordinal());
-    }
-}
+//         Direction d = Direction.valueOf("EAST");
+//         System.out.println(d.name());
+//         // System.out.println(d.toString());
+//         System.out.println(d.ordinal());
+//     }
+// }
 // values() --> We can iterate in this enum
 // valueOf() --> Convert a String into an enum constant
 // name() vs toString() --> tostring can be overridden but name() cannot be overridden
 // ordinal() --> returns the position of the enum constant in the enum declaration, starting from 0
 // toString(), equals(), hashCode()
 
-enum Direction{
-    NORTH,
-    SOUTH,
-    EAST,
-    WEST;
+// enum Direction{
+//     NORTH,
+//     SOUTH,
+//     EAST,
+//     WEST;
 
+//     @Override
+//     public String toString(){
+//         return "Direction is " + name();
+//     }
+// }
+
+//--------INTERFACES------------------------
+public class opps2{
+    public static void main(String[] args) {
+        Payment p = new DebitCard();
+        p.pay();
+    }
+}
+//polymorphism
+interface Payment {
+    void pay();
+}
+class CreditCard implements Payment {
     @Override
-    public String toString(){
-        return "Direction is " + name();
+    public void pay() {
+        System.out.println("Paying via credit card");
+    }
+}
+class DebitCard implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("Paying via debit card");
     }
 }
