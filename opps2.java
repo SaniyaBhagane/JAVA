@@ -1013,29 +1013,58 @@ Problems with this approach :
 //     // }
 // }
 
-public class opps2{
-    public static void main(String[] args) {
-        D d = new D();
-        d.fun();
-    }
-}
-// Diamond problem solved by interfaces
-interface A {
-    void fun();
-}
-interface B extends A {
-    default void fun() {
-        System.out.println("B");
-    }
-}
-interface C extends A {
-    default void fun() {
-         System.out.println("C");
-    }
-}
-class D implements B, C {
-    @Override
-    public void fun() {
-        System.out.println("D");
-    }
-}
+// public class opps2{
+//     public static void main(String[] args) {
+//         D d = new D();
+//         d.fun();
+//     }
+// }
+// // Diamond problem solved by interfaces
+// interface A {
+//     void fun();
+// }
+// interface B extends A {
+//     default void fun() {
+//         System.out.println("B");
+//     }
+// }
+// interface C extends A {
+//     default void fun() {
+//          System.out.println("C");
+//     }
+// }
+// class D implements B, C {
+//     @Override
+//     // public void fun(){
+//     //     System.out.println("D");
+//     // }
+//     public void fun() {
+//         C.super.fun(); // calling C's fun() method
+//         B.super.fun(); // calling B's fun() method
+//     }
+// }
+
+// public class opps2{
+//     public static void main(String[] args) {
+//         C c = new C();
+//         c.fun();
+//     }
+// }
+// // Java Resolution priority rule
+// //1. Class method has higher priority than interface method
+// interface A {
+//     default void fun() {
+//         System.out.println("Inside A interface");
+//     }
+// }
+// class B {
+//     public void fun() {
+//         System.out.println("Inside B class");
+//     }
+// }
+// class C extends B implements A {
+//     @Override
+//     public void fun() {
+//         System.out.println("Inside C class");
+//     }
+// }
