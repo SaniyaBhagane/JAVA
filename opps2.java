@@ -868,12 +868,14 @@ public class opps2{
 
         Direction d = Direction.valueOf("EAST");
         System.out.println(d.name());
+        // System.out.println(d.toString());
+        System.out.println(d.ordinal());
     }
 }
 // values() --> We can iterate in this enum
 // valueOf() --> Convert a String into an enum constant
-// name() vs toString() --> 
-// ordinal()
+// name() vs toString() --> tostring can be overridden but name() cannot be overridden
+// ordinal() --> returns the position of the enum constant in the enum declaration, starting from 0
 // toString(), equals(), hashCode()
 
 enum Direction{
@@ -881,4 +883,9 @@ enum Direction{
     SOUTH,
     EAST,
     WEST;
+
+    @Override
+    public String toString(){
+        return "Direction is " + name();
+    }
 }
