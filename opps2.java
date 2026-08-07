@@ -825,36 +825,60 @@ Problems with this approach :
 //     }
 // }
 
+// public class opps2{
+//     public static void main(String[] args) {
+//         Direction d = Direction.NORTH;
+//         d.move();
+//     }
+// }
+// enum Direction {
+//     NORTH {
+//         @Override
+//         public void move() {
+//             System.out.println("Move up (Y + 1)");
+//         }
+//     },
+//     SOUTH {
+//         @Override
+//         public void move() {
+//             System.out.println("Move down (Y - 1)");
+//         }
+//     },
+//     EAST {
+//         @Override
+//         public void move() {
+//             System.out.println("Move right (X + 1)");
+//         }
+//     },
+//     WEST {
+//         @Override
+//         public void move() {
+//             System.out.println("Move left (X - 1)");
+//         }
+//     };
+//     public abstract void move();
+// }
+
 public class opps2{
-    public static void main(String[] args) {
-        Direction d = Direction.NORTH;
-        d.move();
+    public static void main(String[] args){
+        // Direction[] directions = Direction.values();
+        // for(Direction d : directions){
+        //     System.out.println(d.name());
+        // }
+
+        Direction d = Direction.valueOf("EAST");
+        System.out.p
     }
 }
-enum Direction {
-    NORTH {
-        @Override
-        public void move() {
-            System.out.println("Move up (Y + 1)");
-        }
-    },
-    SOUTH {
-        @Override
-        public void move() {
-            System.out.println("Move down (Y - 1)");
-        }
-    },
-    EAST {
-        @Override
-        public void move() {
-            System.out.println("Move right (X + 1)");
-        }
-    },
-    WEST {
-        @Override
-        public void move() {
-            System.out.println("Move left (X - 1)");
-        }
-    };
-    public abstract void move();
+// values() --> We can iterate in this enum
+// valueOf() --> Convert a String into an enum constant
+// name() vs toString() --> 
+// ordinal()
+// toString(), equals(), hashCode()
+
+enum Direction{
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST;
 }
