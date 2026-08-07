@@ -784,23 +784,43 @@ Problems with this approach :
 //     public static final int MANAGER = 2;
 // }
 
+// public class opps2{
+//     public static void main(String[] args) {
+//         //int status = PaymentStatus2.SUCCESS;
+//         //PaymentStatus status = PaymentStatus.FAILED;
+//         PaymentStatus status = PaymentStatus.FAILED;
+//         System.out.println(status.name());
+//     }
+// }
+// // Enum --> Enumerations ( Enumerated type)
+// // Enum --> Predefined set of constants.
+// enum PaymentStatus {
+//     SUCCESS,
+//     FAILED,
+//     PENDING;
+// }
+// class PaymentStatus2 {
+//     public static final int SUCCESS = 1;
+//     public static final int FAILED = 2;
+//     public static final int PENDING = 3;
+// }
+
 public class opps2{
     public static void main(String[] args) {
-        //int status = PaymentStatus2.SUCCESS;
-        //PaymentStatus status = PaymentStatus.FAILED;
-        PaymentStatus status = PaymentStatus.FAILED;
-        System.out.println(status.name());
+        Direction d = Direction.SOUTH;
+        System.out.println(d.getDegree());
     }
 }
-// Enum --> Enumerations ( Enumerated type)
-// Enum --> Predefined set of constants.
-enum PaymentStatus {
-    SUCCESS,
-    FAILED,
-    PENDING;
-}
-class PaymentStatus2 {
-    public static final int SUCCESS = 1;
-    public static final int FAILED = 2;
-    public static final int PENDING = 3;
+enum Direction {
+    NORTH(0),
+    SOUTH(180),
+    EAST(90),
+    WEST(270);
+    private int degree;
+    Direction(int degree) {
+        this.degree = degree;
+    }
+    public int getDegree() {
+        return this.degree;
+    }
 }
