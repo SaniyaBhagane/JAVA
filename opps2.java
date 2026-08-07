@@ -867,7 +867,7 @@ public class opps2{
         // }
 
         Direction d = Direction.valueOf("EAST");
-        System.out.p
+        System.out.println(d.name());
     }
 }
 // values() --> We can iterate in this enum
