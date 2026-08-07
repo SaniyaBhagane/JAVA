@@ -890,25 +890,45 @@ Problems with this approach :
 // }
 
 //--------INTERFACES------------------------
-public class opps2{
-    public static void main(String[] args) {
-        Payment p = new DebitCard();
-        p.pay();
-    }
-}
-//polymorphism
-interface Payment {
-    void pay();
-}
-class CreditCard implements Payment {
-    @Override
-    public void pay() {
-        System.out.println("Paying via credit card");
-    }
-}
-class DebitCard implements Payment {
-    @Override
-    public void pay() {
-        System.out.println("Paying via debit card");
-    }
-}
+// public class opps2{
+//     public static void main(String[] args) {
+//         Payment p = new DebitCard();
+//         p.pay();
+//     }
+// }
+// //polymorphism
+// interface Payment {
+//     void pay();
+// }
+// class CreditCard implements Payment {
+//     @Override
+//     public void pay() {
+//         System.out.println("Paying via credit card");
+//     }
+// }
+// class DebitCard implements Payment {
+//     @Override
+//     public void pay() {
+//         System.out.println("Paying via debit card");
+//     }
+// }
+
+// public class opps2{
+//      public static void main(String[] args) {
+//         // MathConstant r1 = new Random();
+//         // r1.fun();
+//         System.out.println(MathConstant.PI_VALUE);
+//     }
+// }
+// Variables inside interfaces
+// interface MathConstant {
+//     double PI_VALUE = 3.14;
+//     int VALUE = 10;
+    //void fun();
+// }
+// class Random implements MathConstant {
+    // @Override
+    // public void fun() {
+    //     System.out.println(PI_VALUE);
+    // }
+// }
