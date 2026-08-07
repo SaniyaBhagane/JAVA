@@ -953,3 +953,28 @@ Problems with this approach :
 //     public void fun2() {       
 //     }
 // }
+
+public class opps2{
+    public static void main(String[] args) {
+        Dog d = new StreetDog();
+        d.eat();
+        d.bark();      
+    }
+}
+// Interface inheritance
+interface Animal {
+    void eat();
+} 
+interface Dog extends Animal {
+    void bark();
+}
+class StreetDog implements Dog {
+    @Override
+    public void eat() {
+        System.out.println("Eating");
+    }
+    @Override
+    public void bark() {
+        System.out.println("Barking");
+    }
+}
