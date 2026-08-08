@@ -1217,12 +1217,12 @@ Heap: s5 --> "Hello"
 Heap: 
 */
 // strinbuilder & stringbuffer methods: append(), insert(), delete(), deleteCharAt(), replace(), reverse(), charAt(), setCharAt(), capacity(), ensureCapacity(), trimToSize()
-public class opps2{
-    public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
-            sb.append("Aditya");
-            sb.append("Tandon");
-            sb.append("aaaaa");
+// public class opps2{
+//     public static void main(String[] args) {
+//         StringBuilder sb = new StringBuilder();
+//             sb.append("Aditya");
+//             sb.append("Tandon");
+//             sb.append("aaaaa");
             // 6 + 6 + 5 = 17
             //sb.append(" Tandon");
         // //System.out.println(sb);
@@ -1242,8 +1242,8 @@ public class opps2{
         // sb.setCharAt(3, 'r');
         //System.out.println(sb.capacity());
         //sb.ensureCapacity(100);
-        System.out.println(sb.capacity()); // 34
-        sb.trimToSize(); // 17
-        System.out.println(sb.capacity());
-    }
-}
+//         System.out.println(sb.capacity()); // 34
+//         sb.trimToSize(); // 17
+//         System.out.println(sb.capacity());
+//     }
+// }
