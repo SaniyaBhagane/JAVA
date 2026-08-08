@@ -1152,11 +1152,11 @@ conversion --> valueOf(), toString(), getBytes()
 advanced --> intern(), format(), matches(), regionMatches(), codePointAt(), codePointBefore(), codePointCount(), offsetByCodePoints()
  */
 
-public class opps2{
-    public static void main(String[] args) {
+// public class opps2{
+//     public static void main(String[] args) {
         
-        String s1 = new String("Aditya");
-        String s2 = new String("abc");
+//         String s1 = new String("Aditya");
+//         String s2 = new String("abc");
         
         // Length/ Emptiness
         // System.out.println(s1.length()); // 5
@@ -1201,13 +1201,13 @@ public class opps2{
         // String s6 = s5.intern();
         // System.out.println(s5 == s6);
         // format
-        String name = "Aditya";
-        int age = 28;
-        // Hello Aditya, your age is 28;
-        System.out.println("Hello" + " " + name + "," + " " + "your age is" + " " + age);
-        System.out.println(String.format("Hello %s, your age is %s", name, age));       
-    }
-}
+//         String name = "Aditya";
+//         int age = 28;
+//         // Hello Aditya, your age is 28;
+//         System.out.println("Hello" + " " + name + "," + " " + "your age is" + " " + age);
+//         System.out.println(String.format("Hello %s, your age is %s", name, age));       
+//     }
+// }
 // equals() --> == --> References compare
 // compareTo() --> -ve, 0 +ve
 // substring --> [, )
@@ -1216,3 +1216,34 @@ String pool : "Hello" <-- s6
 Heap: s5 --> "Hello" 
 Heap: 
 */
+// strinbuilder & stringbuffer methods: append(), insert(), delete(), deleteCharAt(), replace(), reverse(), charAt(), setCharAt(), capacity(), ensureCapacity(), trimToSize()
+public class opps2{
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+            sb.append("Aditya");
+            sb.append("Tandon");
+            sb.append("aaaaa");
+            // 6 + 6 + 5 = 17
+            //sb.append(" Tandon");
+        // //System.out.println(sb);
+        // // insert()
+        // sb.insert(2,  'o');
+        // //System.out.println(sb); // Adoitya
+        // // delete()
+        // sb.delete(0, 2);
+        // System.out.println(sb);
+        // sb.deleteCharAt(1);
+        // replace();
+        //sb.replace(1, 3, "XY");
+        // System.out.println(sb);
+        // sb.reverse();
+        // System.out.println(sb);
+        // sb.charAt(1);
+        // sb.setCharAt(3, 'r');
+        //System.out.println(sb.capacity());
+        //sb.ensureCapacity(100);
+        System.out.println(sb.capacity()); // 34
+        sb.trimToSize(); // 17
+        System.out.println(sb.capacity());
+    }
+}
