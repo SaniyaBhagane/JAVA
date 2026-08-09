@@ -1510,6 +1510,10 @@ Heap:
 // import java.util.ArrayList;
 // import java.util.List;
 // // Generics with Lower bound (super)
+/*reading --> covariant  --> List<? extends T >{}
+ writing --> countervariant --> List<? super T >{}
+ List< T > --> invariant
+*/
 // public class  opps2{
 //         public static void main(String[] args) {
 //         List<Animal> animals = new ArrayList<>();
