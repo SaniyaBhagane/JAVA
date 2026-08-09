@@ -1248,19 +1248,54 @@ Heap:
 // }
 
 //UPCASTING & DOWNCASTING
-public class opps2{
-    public static void main(String[] args) {
+// public class opps2{
+//     public static void main(String[] args) {
         // Upcasting
-        String s = "Hello";
-        Object obj = s;
-        //System.out.println(obj);
+//         String s = "Hello";
+//         Object obj = s;
+//         //System.out.println(obj);
 
+//         // Downcasting
+//         Object obj2 = "Aditya";
+//         String s2 = (String) obj2;
+//         System.out.println(s2); //--> Aditya
+//         Object obj3 = 10;
+//         String s3 = (String) obj3;
+//         System.out.println(s3); // ClassCastException
+//     }
+// }
+
+// public class opps2{
+//     Box b1 = new Box(10);
+//         Box b2 = new Box("Hello");
+//         Box b3 = new Box(true);
         // Downcasting
-        Object obj2 = "Aditya";
-        String s2 = (String) obj2;
-        System.out.println(s2); //--> Aditya
-        Object obj3 = 10;
-        String s3 = (String) obj3;
-        System.out.println(s3); // ClassCastException
-    }
-}
+        // Integer x = (Integer) b1.getValue();
+        // String s = (String) b2.getValue();
+        // Boolean b = (Boolean) b3.getValue();
+        // System.out.println(x + 5);
+        // System.out.println(s + 5);
+        // System.out.println(b);
+//          String s = (String) b1.getValue();
+//         System.out.println(s);
+//     }
+// }
+// class Box {
+//     private Object value;
+//     Box(Object value) {
+//         this.value = value;
+//     }
+//     public Object getValue() {
+//         return this.value;
+//     }
+//     public void setValue(Object value) {
+//         this.value = value;
+//     }
+// }
+/* Limitation of using Object class as a generic type:
+1. Type safety is lost, as any type of object can be assigned to the value field.
+2. Downcasting is required to retrieve the original type, which can lead to ClassCastException
+3. Performance overhead due to boxing and unboxing of primitive types.
+4. Many errors shift to runtime
+ */
+// Object --> Too generic (Type information is lost)
