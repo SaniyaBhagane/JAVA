@@ -1153,8 +1153,7 @@ advanced --> intern(), format(), matches(), regionMatches(), codePointAt(), code
  */
 
 // public class opps2{
-//     public static void main(String[] args) {
-        
+//     public static void main(String[] args) {       
 //         String s1 = new String("Aditya");
 //         String s2 = new String("abc");
         
@@ -1247,3 +1246,21 @@ Heap:
 //         System.out.println(sb.capacity());
 //     }
 // }
+
+//UPCASTING & DOWNCASTING
+public class opps2{
+    public static void main(String[] args) {
+        // Upcasting
+        String s = "Hello";
+        Object obj = s;
+        //System.out.println(obj);
+
+        // Downcasting
+        Object obj2 = "Aditya";
+        String s2 = (String) obj2;
+        System.out.println(s2); //--> Aditya
+        Object obj3 = 10;
+        String s3 = (String) obj3;
+        System.out.println(s3); // ClassCastException
+    }
+}
