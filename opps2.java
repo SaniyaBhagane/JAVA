@@ -1329,6 +1329,7 @@ Heap:
 // }
 // Type information is not lost
 
+//generic with one or more datatypes in same object
 // public class opps2{
 //         public static void main(String[] args) {
 //         Pair<Integer, String> p1 = new Pair<>(23, "Aditya");       
@@ -1344,3 +1345,21 @@ Heap:
 //         this.second = second;
 //     }
 // }
+
+// public class opps2{
+//         public static void main(String[] args) {
+//         // Integer y =  getResult(23);
+//         // System.out.println(y);
+//         printPair(11, 23);
+//         // Type inference
+//     }
+//     public static <T> T getResult(T x) { // <T> Type parameter
+//         return x;
+//     }
+//     public static <T,U> void printPair(T first, U second) {
+//         System.out.println(first + " , " + second);
+//     }
+// }
+// // Generic Methods
+// // <T> returnType methodName(T parameter) {
+// // }
