@@ -1685,6 +1685,9 @@ import java.util.*;
         
         // c.retainAll(List.of(1,2));
         // System.out.println(c);
+
+        // c.removeAll(List.of(1,2));
+        // System.out.println(c);
        
         // clear()
 //         c.clear();
