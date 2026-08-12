@@ -1743,3 +1743,22 @@ import java.util.*;
 //     }
 // }
 // 1, 2, 3 
+
+public class opps2{
+        public static void main(String [] args){
+                Set<String> set = new HashSet<>();
+                set.add("Aditya");
+                set.add("Rohit");
+                set.add("Rahul");
+                System.out.println(set.contains("Aditya"));
+                System.out.println(set.contains("Abhay"));
+
+                Map<Integer, String> map = new HashMap<>();
+                map.put(101, "Aditya");
+                map.put(102, "Rohit");
+                map.put(103, "Aditya");
+                System.out.println(map.containsKey(101));
+                System.out.println(map.get(102));
+
+        }
+}
