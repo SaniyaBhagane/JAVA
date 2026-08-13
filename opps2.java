@@ -1631,8 +1631,7 @@ import java.util.*;
 //            System.out.println(value);           
 //         }
 //     }
-// }
-// Concurrent Modidification Exception --> Fail fast
+// }                 // Concurrent Modidification Exception --> Fail fast
 
 //COLLECTION INTERFACE method()
 // public class opps2{
