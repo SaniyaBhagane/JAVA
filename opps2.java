@@ -1695,8 +1695,7 @@ import java.util.*;
 //         // equals(), hashCode()       
 //     }
 // }
-// add, remove, AddAll, removeAll, retainAll, contains, conrtainsAll, toArray, 
-// iterator, size, isEmpty
+// add, remove, AddAll, removeAll, retainAll, contains, conrtainsAll, toArray, iterator, size, isEmpty
 
 //--------------LISTS-----------------
 // public class opps2 {
