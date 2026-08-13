@@ -1735,10 +1735,8 @@ import java.util.*;
 
 //         List<Integer> l = List.of(1,2,3,4,5,6,7,8);
 //         //l.add(9);
-
 //         List<Integer> l2 = List.copyOf(l);
 //         l2.add(7);
-
 //         System.out.println(l2);
 //     }
 // }
